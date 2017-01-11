@@ -95,6 +95,20 @@ cd ./wapiti-2.3.0
 ./bin/wapiti http://192.168.8.90:9999  -u -f json -m "-all"
 ```
 
+# ### Nikto
+
+### Descargar
+
+```
+git clone https://github.com/sullo/nikto
+```
+
+###  Ejecutar
+
+```
+cd ./nikto
+perl ./program/nikto.pl -h  https://192.168.8.90:9999
+
 
 
 
