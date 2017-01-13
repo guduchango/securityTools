@@ -36,6 +36,15 @@ cd ./ZAP_2.5.0
 ./zap.sh
 ```
 
+### Configuración para testeo inteligente API Restful
+
+* Una ves instalado firefox, se debe ir a: 
+* ->preferencias->avanzadas->Red->Configuración 
+* Elegir la opcion -> Configuración manual proxy:
+* Cambiar: Proxy HTTP - Proxy SSL - Proxy FTP por 127.1.1.0 y puerto 8080
+* Una vez realizado esto se debe navegar por la aplicación la cual tiene el API
+* Y ver que en el programa ZAP se van agregando URL, despues de haber logrado navegar por la mayoria del sistema posible se hace click derecho atacar y listo
+
 # ### w3af
 
 ### Dependencias ubuntu 
@@ -108,6 +117,7 @@ git clone https://github.com/sullo/nikto
 ```
 cd ./nikto
 perl ./program/nikto.pl -h  https://192.168.8.90:9999
+
 
 
 
